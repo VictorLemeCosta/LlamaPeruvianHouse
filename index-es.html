@@ -7,36 +7,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Llama Peruvian Food</title>
-    <link rel="icon" type="image/x-icon" href="/assets/Logo/40X40.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/Logo/40X40.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <div class="logo">
-            <img src="./assets/Logo/logo e nome cor preto.png">
+            <img src="./assets/Logo/logo e nome cor preto.png" id="logo">
         </div>
-        <div>
-            <nav class="menu">
+        <div class="centraliza-topo">
+            <nav class="menu" id="menu">
                 <ul type="none">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#ifood">IFOOD</a></li>
-                    <li><a href="#cardapio">MENU</a></li>
+                    <li><a href="#topo" id="botao1">HOME</a></li>
+                    <li><a href="#ifood" id="botao2">IFOOD</a></li>
+                    <li><a href="#cardapio" id="botao3">MENU</a></li>
+                    <li><a href="#topo" id="botao4">EVENTOS</a></li>
                 </ul>
             </nav>
+            <div class="idioma" id="idioma">
+                <div class="language-english">
+                    <a href="./index.html">
+                        <img src="./assets/idioma/portugues.png"> 
+                        <p>PT</p>
+                    </a>
+                </div>
+                <div class="language-spanish">
+                    <a href="./index-en.html">
+                        <img src="./assets/idioma/ingles.png"> 
+                        <p>EN</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="idioma">
-            <div class="language-english">
-                <a href="./index.html">
-                    <img src="./assets/idioma/portugues.png"> 
-                    <p>PT</p>
-                </a>
-            </div>
-            <div class="language-spanish">
-                <a href="./index-en.html">
-                    <img src="./assets/idioma/ingles.png"> 
-                    <p>EN</p>
-                </a>
-            </div>
+       
+        <div class="mobile-menu">
+            <img src="./assets/menu-mobile/menu-hamburguer.png" id="btnMenu">
         </div>
     </header>
     <section class="banner">
@@ -55,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section class="banner2" id="banner2">
+    <section class="banner2">
         <div>
             <p>
                 Nuestra selección de platos es una celebración de la diversidad y la riqueza de los sabores peruanos, ofreciendo una variedad de opciones que seguramente complacerán a todos los paladares. Explora nuestro variado menú, lleno de delicias gastronómicas que van desde platos clásicos hasta creaciones innovadoras, todo preparado con ingredientes frescos y de alta calidad. Disfruta de una experiencia gastronómica verdaderamente memorable en nuestro ambiente acogedor y relajado, donde la hospitalidad peruana se encuentra con la excelencia culinaria. Únete a nosotros en Llama y emprende un viaje gastronómico único que seguramente dejará una impresión duradera en tu paladar.
@@ -83,17 +88,17 @@
         </div>
         <div class="cardapios">
             <div class="cardapio-pt-bt">
-                <a href="assets/cardapios/Cardapio portugues.pdf" target="_blank">
+                <a href="assets/cardapios/Cardapio (Português).pdf" target="_blank">
                     <img src="./assets/cardapios/cardapioPT-BR.png">
                 </a>
             </div>
             <div class="cardapio-en">
-                <a href="assets/cardapios/Cardapio portugues.pdf" target="_blank">
+                <a href="assets/cardapios/Cardapio  (Inglês).pdf" target="_blank">
                     <img src="./assets/cardapios/cardapioEN.png">
                 </a>
             </div>
             <div class="cardapio-es">
-                <a href="assets/cardapios/Cardapio portugues.pdf" target="_blank">
+                <a href="assets/cardapios/Cardapio (Espanhol) .pdf" target="_blank">
                     <img src="./assets/cardapios/cardapioES.png">
                 </a>
             </div>
@@ -115,5 +120,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

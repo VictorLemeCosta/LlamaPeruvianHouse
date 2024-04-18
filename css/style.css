@@ -5,17 +5,25 @@
 }
 
 header {
-    height: 200px;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #ffcd00;
+    position: fixed;
+    z-index: 2;
 }
 
 .logo img {
-    height: 195px;
+    height: 145px;
+}
+
+.centraliza-topo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu ul{
@@ -31,10 +39,15 @@ header {
     color: black;
 }
 
+.menu ul li a:hover {
+    font-weight: 600;
+    transition: 0.7s;
+}
+
 .idioma {
     display: flex;
     align-items: center;
-    width: 60px;
+    width: 120px;
     justify-content: space-between;
 }
 
@@ -43,6 +56,11 @@ header {
     align-items: center;
     text-decoration: none;
     color: black;
+}
+
+.idioma div a:hover {
+    font-weight: 600;
+    transition: 0.7s;
 }
 
 .language-english {
@@ -57,6 +75,10 @@ header {
     font-size: 15px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .banner {
     background-color: #e4e4e5;
     height: 750px;
@@ -64,6 +86,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 200px;
 }
 
 .banner img {
@@ -112,7 +135,7 @@ header {
 .banner2 {
     height: 500px;
     width: 100%;
-    background-image: url("/assets/banner/machu-picchu.jpg");
+    background-image: url("../assets/banner/machu-picchu.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -128,7 +151,6 @@ header {
 }
 
 .banner2 div {
-    
     background-color: rgb(0, 0, 0, 0.75);
 }
 
@@ -182,11 +204,19 @@ header {
     border: 1px solid black;
 }
 
+.peça-ifood a:hover {
+    background-color: black;
+    color: #ffcd00;
+    border: 1px solid #e4e4e5;
+    transition: 0.7s;
+}
+
 .celular-ifood img {
     height: 400px;
     position: absolute;
     top: 1650px;
     right: 10px;
+    z-index: 0;
 }
 
 .cardapio {
@@ -238,6 +268,11 @@ header {
     width: 200px;
 }
 
+.cardapios div:hover {
+    border: 1px solid black;
+    transition: 0.7s;
+}
+
 footer {
     height: 250px;
     margin: 0 auto;
@@ -273,11 +308,515 @@ footer {
     text-transform: uppercase;
 }
 
+.contato p:hover {
+    font-weight: 600;
+    transition: 0.7s;
+}
+
 .contato a {
     text-decoration: none;
     color: #e4e4e5;
 }
 
+.contato a:hover {
+    font-weight: 600;
+    transition: 0.7s;
+}
+
 .social-medias img {
     height: 40px;
+}
+
+@media screen and (max-width: 1600px){
+    .banner img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .banner p {
+        height: 400px;
+        width: 300px;
+    }
+
+    .ifood-pedido {
+        width: 40%;
+    }
+
+    .cardapio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title, .cardapios {
+        margin: 0px;
+    }
+
+    .title {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .title img {
+        height: 200px;
+        left: 80px;
+        bottom: -1280px;
+    }
+
+    .title h1 {
+        height: 30px;
+    }
+
+    .cardapios {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1380px){
+    .centraliza-topo {
+        width: 55%;
+    }
+    
+    .banner img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .banner p {
+        height: 350px;
+        width: 250px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .peça-ifood h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .peça-ifood p {
+        margin-right: 0px;
+        font-size: 20px;
+    }
+
+    .celular-ifood img {
+        height: 300px;
+        top: 1750px;
+    }
+
+    .title img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .centraliza-topo {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .centraliza-topo {
+        width: 65%;
+    }
+    
+    .banner {
+        height: 1000px;
+        flex-direction: column;
+    }
+
+    .celular-ifood img {
+        top: 2050px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .centraliza-topo {
+        width: 70%;
+    }
+    
+    .peça-ifood h1 {
+        font-size: 22px;
+    }
+
+    .peça-ifood p {
+        font-size: 18px;
+    }
+
+    .celular-ifood img {
+        height: 200px;
+        top: 2100px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .centraliza-topo {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .centraliza-topo {
+        justify-content: space-around;
+    }
+    
+    
+    .menu {
+        width: 500px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .idioma {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .idioma img {
+        height: 20px;
+    }
+
+    .language-english {
+        margin-right: 0px;
+    }
+
+    .idioma p {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .banner2 p {
+        margin: 0 auto;
+        height: 500px;
+        width: 60%;
+        color: #e4e4e5;
+        text-align: center;
+        align-content: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .centraliza-topo {
+        width: 0px;
+    }
+    
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        visibility: hidden;
+        transition: .9s;
+        z-index: 2;
+    }
+
+    .menu ul {
+        width: 100%;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .menu a {
+        border-bottom: 1px solid black;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu img{
+        height: 50px;
+    }
+
+    .idioma {
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        right: 0px;
+        z-index: 2;
+        visibility: hidden;
+    }
+
+    .language-english, .language-spanish {
+        border-bottom: 1px solid black;
+    }
+
+    .banner {
+        height: 800px;
+    }
+
+    .banner p {
+        font-size: 15px;
+        height: 250px;
+    }
+
+    .banner img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .banner2 {
+        height: 400px;
+    }
+
+    .banner2 p {
+        font-size: 15px;
+        height: 400px;
+    }
+
+    .ifood-pedido {
+        width: 100%;
+    }
+    
+    .peça-ifood {
+        width: 90%;
+    }
+
+    .peça-ifood h1 {
+        font-size: 25px;
+    }
+
+    .peça-ifood p {
+        font-size: 20px;
+    }
+
+    .celular-ifood img {
+        height: 150px;
+        top: 1850px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .cardapios {
+        width: 500px;
+    }
+    
+    .cardapios div {
+        height: 150px;
+        width: 150px;
+    }
+
+    .cardapios img {
+        height: 150px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contato {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .banner p {
+        width: 180px;
+    }
+    
+    .ifood {
+        height: 380px;
+    }
+    
+    .peça-ifood {
+        height: 300px;
+    }
+
+    .peça-ifood h1 {
+        font-size: 20px;
+    }
+
+    .peça-ifood p {
+        font-size: 15px;
+    }
+
+    .celular-ifood img {
+        top: 1680px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .banner2 div {
+        padding: 10px 40px;
+    }
+    
+    .banner2 p {
+        width: 100%;
+    }
+    
+    .cardapios {
+        width: 380px;
+        height: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .cardapios div {
+        height: 140px;
+        width: 140px;
+    }
+
+    .cardapios img {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header {
+        height: 150px;
+    }
+    
+    .logo img {
+        height: 150px;
+    }
+    
+    .banner {
+        height: 600px;
+    }
+    
+    .banner img {
+        height: 180px;
+        width: 130px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        height: 180px;
+        width: 160px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .banner2 p {
+        font-size: 12px;
+    }
+
+    .peça-ifood p {
+        font-size: 12px;
+    }
+
+    .celular-ifood img {
+        height: 50px;
+        top: 1530px;
+    }
+
+    .cardapios {
+        width: 90%;
+        height: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .cardapios div {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cardapios img {
+        height: 100px;
+    }
+
+    footer {
+        height: 380px;
+    }
+
+    .footer-logo {
+        height: 180px;
+    }
+
+    .social-medias img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner img {
+        height: 150px;
+        width: 100px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        height: 150px;
+        width: 140px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    .banner2 p {
+        font-size: 10px;
+    }
+
+    .ifood {
+        height: 300px;
+    }
+
+    .peça-ifood h1 {
+        font-size: 15px;
+    }
+
+    .peça-ifood p {
+        font-size: 10px;
+    }
+
+    .celular-ifood img {
+        display: none;
+    }
+    
+    .cardapio {
+        height: 180px;
+    }
+    
+    .cardapios {
+        width: 90%;
+        height: 300px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .cardapios div {
+        height: 80px;
+        width: 80px;
+    }
+
+    .cardapios img {
+        height: 80px;
+    }
 }
