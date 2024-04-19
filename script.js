@@ -168,3 +168,84 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
+
+function exibirAlertaIfoodPT() {
+
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Nosso Ifood está desabilitado no momento.\n\n" + "Fique atento nas nossas redes sociais para saber quando estará disponível.",
+  });
+
+}
+
+function exibirAlertaIfoodEN() {
+
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Our Ifood is currently disabled.\n\n" + "Stay tuned to our social media to know when it's available.",
+  });
+  
+}
+
+function exibirAlertaIfoodES() {
+
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Nuestro Ifood está desactivado en este momento\n\n" + "Mantente atento a nuestras redes sociales para saber cuándo estará disponible.",
+  });
+   
+}
+
+function redirectLinkPT () {
+  Swal.fire({
+    title: "Você será redirecionado para o WhatsApp",
+    text: "Prossiga o atendimento com um atendente.",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonText: "Confirmar",
+    cancelButtonText: "Cancelar"
+  }).then((result) => {
+    // Se o usuário confirmar, redirecionar para o WhatsApp
+    if (result.isConfirmed) {
+      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
+    }
+  }); 
+}
+
+function redirectLinkEN () {
+  Swal.fire({
+    title: "You will be redirected to WhatsApp.",
+    text: "Continue with an attendant.",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonText: "Confirm",
+    cancelButtonText: "Cancel"
+  }).then((result) => {
+    // Se o usuário confirmar, redirecionar para o WhatsApp
+    if (result.isConfirmed) {
+      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
+    }
+  }); 
+}
+
+function redirectLinkES () {
+  Swal.fire({
+    title: "Serás redirigido a WhatsApp.",
+    text: "Continúa con un empleado.",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonText: "Confirmar",
+    cancelButtonText: "Cancelar"
+  }).then((result) => {
+    // Se o usuário confirmar, redirecionar para o WhatsApp
+    if (result.isConfirmed) {
+      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
+    }
+  }); 
+}
