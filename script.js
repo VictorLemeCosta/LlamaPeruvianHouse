@@ -175,6 +175,8 @@ function exibirAlertaIfoodPT() {
     icon: "error",
     title: "Oops...",
     text: "Nosso Ifood está desabilitado no momento.\n\n" + "Fique atento nas nossas redes sociais para saber quando estará disponível.",
+    confirmButtonColor: "#ffcd00",
+    iconColor: "#f51d1d"
   });
 
 }
@@ -185,6 +187,8 @@ function exibirAlertaIfoodEN() {
     icon: "error",
     title: "Oops...",
     text: "Our Ifood is currently disabled.\n\n" + "Stay tuned to our social media to know when it's available.",
+    confirmButtonColor: "#ffcd00",
+    iconColor: "#f51d1d"
   });
   
 }
@@ -195,6 +199,8 @@ function exibirAlertaIfoodES() {
     icon: "error",
     title: "Oops...",
     text: "Nuestro Ifood está desactivado en este momento\n\n" + "Mantente atento a nuestras redes sociales para saber cuándo estará disponible.",
+    confirmButtonColor: "#ffcd00",
+    iconColor: "#f51d1d"
   });
    
 }
@@ -206,7 +212,10 @@ function redirectLinkPT () {
     icon: "info",
     showCancelButton: true,
     confirmButtonText: "Confirmar",
-    cancelButtonText: "Cancelar"
+    confirmButtonColor: "#ffcd00",
+    cancelButtonText: "Cancelar",
+    cancelButtonColor: "#f51d1d",
+    iconColor: "#ffcd00"
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
@@ -223,7 +232,10 @@ function redirectLinkEN () {
     icon: "info",
     showCancelButton: true,
     confirmButtonText: "Confirm",
-    cancelButtonText: "Cancel"
+    confirmButtonColor: "#ffcd00",
+    cancelButtonText: "Cancel",
+    cancelButtonColor: "#f51d1d",
+    iconColor: "#ffcd00"
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
@@ -240,7 +252,10 @@ function redirectLinkES () {
     icon: "info",
     showCancelButton: true,
     confirmButtonText: "Confirmar",
-    cancelButtonText: "Cancelar"
+    confirmButtonColor: "#ffcd00",
+    cancelButtonText: "Cancelar",
+    cancelButtonColor: "#f51d1d",
+    iconColor: "#ffcd00"
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
