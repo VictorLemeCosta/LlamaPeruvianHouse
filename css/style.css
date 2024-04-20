@@ -553,13 +553,14 @@ footer {
     
     .menu {
         width: 100%;
+        height: calc(100%-145px);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         gap: 15px;
         position: absolute;
-        top: 150px;
+        top: 145px;
         left: 50%;
         transform: translateX(-50%);
         visibility: hidden;
@@ -569,7 +570,7 @@ footer {
 
     .menu ul {
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 145px);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -593,7 +594,7 @@ footer {
     .idioma {
         position: absolute;
         width: 100%;
-        top: 200px;
+        top: 165px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;

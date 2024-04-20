@@ -83,7 +83,11 @@ function scrollFunction() {
 
         document.getElementById("menu").style.transition = ".5s";
 
-        document.getElementById("idioma").style.top = "130px";
+        document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
+
+        document.getElementById("menu-ul").style.transition = ".5s";
+
+        document.getElementById("idioma").style.top = "110px";
 
         document.getElementById("idioma").style.transition = ".5s";
     } 
@@ -96,7 +100,9 @@ function scrollFunction() {
 
         document.getElementById("menu").style.transition = ".5s"
 
-        document.getElementById("idioma").style.top = "200px";
+        document.getElementById("menu-ul").style.height = "calc(100vh - 145px)";
+
+        document.getElementById("idioma").style.top = "165px";
 
         document.getElementById("idioma").style.transition = ".5s"
     }
