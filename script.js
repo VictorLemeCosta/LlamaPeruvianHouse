@@ -219,7 +219,7 @@ function redirectLinkPT () {
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
-      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      const whatsappLink = "https://wa.me/5511967224283/"; // Link do WhatsApp
       window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
     }
   }); 
@@ -239,7 +239,7 @@ function redirectLinkEN () {
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
-      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      const whatsappLink = "https://wa.me/5511967224283/"; // Link do WhatsApp
       window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
     }
   }); 
@@ -259,7 +259,7 @@ function redirectLinkES () {
   }).then((result) => {
     // Se o usuário confirmar, redirecionar para o WhatsApp
     if (result.isConfirmed) {
-      const whatsappLink = "https://wa.me/5511947461301/"; // Link do WhatsApp
+      const whatsappLink = "https://wa.me/5511967224283/"; // Link do WhatsApp
       window.location.href = whatsappLink; // Redirecionar para o link do WhatsApp
     }
   }); 
