@@ -36,6 +36,7 @@ document.querySelector('#botao4').addEventListener('click', e => {
 function toggleMenu() {
     if (open) {
         /*Abre o menu*/
+        document.body.classList.add('menu-open');
         document.querySelector('#menu').style.visibility = 'visible';
         document.querySelector('#menu').style.opacity = '1';
         document.querySelector('#menu').style.transition = "opacity .7s ease-in-out";
@@ -48,6 +49,7 @@ function toggleMenu() {
     
     if (isMobile == true) {
         /*Fecha o menu*/
+        document.body.classList.remove('menu-open');
         document.querySelector('#menu').style.opacity = '0';
         document.querySelector('#menu').style.transition = "opacity .7s ease-in-out";
         document.querySelector('#idioma').style.opacity = '0';
@@ -68,44 +70,47 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
+  if (!open){  
+  
     if (document.body.scrollTop > 40 ||
-        document.documentElement.scrollTop > 40)
-    {
-        document.getElementById("topo").style.height = "80px";
-              
-        document.getElementById("logo").style.height = "100px";
+          document.documentElement.scrollTop > 40)
+      {
+          document.getElementById("topo").style.height = "80px";
+                
+          document.getElementById("logo").style.height = "100px";
 
-        document.getElementById("topo").style.transition = ".5s";
+          document.getElementById("topo").style.transition = ".5s";
 
-        document.getElementById("logo").style.transition = ".5s";
+          document.getElementById("logo").style.transition = ".5s";
 
-        document.getElementById("menu").style.top = "80px";
+          document.getElementById("menu").style.top = "80px";
 
-        document.getElementById("menu").style.transition = ".5s";
+          document.getElementById("menu").style.transition = ".5s";
 
-        document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
+          document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
 
-        document.getElementById("menu-ul").style.transition = ".5s";
+          document.getElementById("menu-ul").style.transition = ".5s";
 
-        document.getElementById("idioma").style.top = "110px";
+          document.getElementById("idioma").style.top = "110px";
 
-        document.getElementById("idioma").style.transition = ".5s";
-    } 
-    else {
-        document.getElementById("topo").style.height = "150px";
-                      
-        document.getElementById("logo").style.height = "145px";
+          document.getElementById("idioma").style.transition = ".5s";
+      }
+      else {
+          document.getElementById("topo").style.height = "150px";
+                        
+          document.getElementById("logo").style.height = "145px";
 
-        document.getElementById("menu").style.top = "150px";
+          document.getElementById("menu").style.top = "150px";
 
-        document.getElementById("menu").style.transition = ".5s"
+          document.getElementById("menu").style.transition = ".5s"
 
-        document.getElementById("menu-ul").style.height = "calc(100vh - 145px)";
+          document.getElementById("menu-ul").style.height = "calc(100vh - 145px)";
 
-        document.getElementById("idioma").style.top = "165px";
+          document.getElementById("idioma").style.top = "165px";
 
-        document.getElementById("idioma").style.transition = ".5s"
-    }
+          document.getElementById("idioma").style.transition = ".5s"
+      }
+  }
 }
 
 const btnImage = document.getElementById("btnMenu");
@@ -124,7 +129,6 @@ function trocarImagem() {
         document.getElementById("logo").style.transition = ".5s"
         return;
     } else {
-        
         btnImage.src = "./assets/menu-mobile/menu-fechar.png";
         document.getElementById("btnMenu").style.transition = ".7s"
         document.getElementById("topo").style.height = "80px";
@@ -135,7 +139,6 @@ function trocarImagem() {
         document.getElementById("idioma").style.transition = ".5s"
         document.getElementById("logo").style.height = "100px";
         document.getElementById("logo").style.transition = ".5s"
-        document.getElementById("topo").style.overflow = "visible"
         document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
         return;
     }
