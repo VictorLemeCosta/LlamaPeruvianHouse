@@ -114,11 +114,29 @@ function trocarImagem() {
     if (open == false) {
         btnImage.src = "./assets/menu-mobile/menu-hamburguer.png";
         document.getElementById("btnMenu").style.transition = ".7s"
+        document.getElementById("topo").style.height = "150px";
+        document.getElementById("topo").style.transition = ".5s"
+        document.getElementById("menu").style.top = "150px";
+        document.getElementById("menu").style.transition = ".5s"
+        document.getElementById("idioma").style.top = "165px";
+        document.getElementById("idioma").style.transition = ".5s"
+        document.getElementById("logo").style.height = "145px";
+        document.getElementById("logo").style.transition = ".5s"
         return;
     } else {
         
         btnImage.src = "./assets/menu-mobile/menu-fechar.png";
         document.getElementById("btnMenu").style.transition = ".7s"
+        document.getElementById("topo").style.height = "80px";
+        document.getElementById("topo").style.transition = ".5s"
+        document.getElementById("menu").style.top = "80px";
+        document.getElementById("menu").style.transition = ".5s"
+        document.getElementById("idioma").style.top = "110px";
+        document.getElementById("idioma").style.transition = ".5s"
+        document.getElementById("logo").style.height = "100px";
+        document.getElementById("logo").style.transition = ".5s"
+        document.getElementById("topo").style.overflow = "visible"
+        document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
         return;
     }
   }
