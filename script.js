@@ -66,7 +66,7 @@ function toggleMenu() {
 
 
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
@@ -87,8 +87,6 @@ function scrollFunction() {
 
           document.getElementById("menu").style.transition = ".5s";
 
-          document.getElementById("menu-ul").style.height = "calc(100vh - 80px)";
-
           document.getElementById("menu-ul").style.transition = ".5s";
 
           document.getElementById("idioma").style.top = "110px";
@@ -98,13 +96,11 @@ function scrollFunction() {
       else {
           document.getElementById("topo").style.height = "150px";
                         
-          document.getElementById("logo").style.height = "145px";
+          document.getElementById("logo").style.height = "150px";
 
           document.getElementById("menu").style.top = "150px";
 
           document.getElementById("menu").style.transition = ".5s"
-
-          document.getElementById("menu-ul").style.height = "calc(100vh - 145px)";
 
           document.getElementById("idioma").style.top = "165px";
 
@@ -125,7 +121,7 @@ function trocarImagem() {
         document.getElementById("menu").style.transition = ".5s"
         document.getElementById("idioma").style.top = "165px";
         document.getElementById("idioma").style.transition = ".5s"
-        document.getElementById("logo").style.height = "145px";
+        document.getElementById("logo").style.height = "150px";
         document.getElementById("logo").style.transition = ".5s"
         return;
     } else {

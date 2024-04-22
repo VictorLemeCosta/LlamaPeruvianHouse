@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     flex-direction: row;
     width: 500px;
@@ -557,7 +557,7 @@ footer {
     
     .menu {
         width: 100%;
-        height: calc(100%-145px);
+        height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -574,7 +574,7 @@ footer {
 
     .menu ul {
         width: 100%;
-        height: calc(100vh - 145px);
+        height: calc(145px - 100vh);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
